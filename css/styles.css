@@ -59,7 +59,7 @@ a {
   /* padding-top: 24px; */
 }
 
-.navi-list,
+.site-nav__list,
 .connect-list,
 .benefits-section,
 .port-link,
@@ -73,8 +73,8 @@ a {
   text-decoration: none;
 }
 
-.navi-link:hover,
-.navi-link:focus,
+.site-nav__link:hover,
+.site-nav__link:focus,
 .connect-link:hover,
 .connect-link:focus {
   color: var(--third-color);
@@ -95,7 +95,7 @@ a {
   font-size: 26px;
   line-height: 1.2;
 }
-.navi-list {
+.site-nav__list {
   display: flex;
   color: var(--first-color);
   font-weight: 500;
@@ -110,7 +110,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navi-link {
+.site-nav__link {
   position: relative;
   display: flex;
   padding-top: 32px;
@@ -119,10 +119,10 @@ a {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navi-list li {
+.site-nav__item {
   margin-right: 50px;
 }
-.navi-list li:last-child {
+.site-nav__item:last-child {
   margin-right: 0;
 }
 
