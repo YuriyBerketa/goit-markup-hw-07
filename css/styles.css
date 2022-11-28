@@ -712,6 +712,7 @@ margin-bottom: 30px;
 }
 .messengers__item {
   margin-right: 10px;
+  list-style: none;
 }
 
 .messengers__link {
@@ -887,7 +888,6 @@ margin-bottom: 30px;
   margin-left: 70px;
 }
 .footer-social {
-  /* display: block; */
   text-align: center;
   align-items: center;
 }
