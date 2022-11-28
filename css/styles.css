@@ -342,7 +342,7 @@ position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-label-texteria {
+.modal-form__texteria {
   display: block;
   width: 100%;
   height: 120px;
@@ -357,15 +357,15 @@ position: absolute;
   letter-spacing: 0.01em;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-label-texteria::placeholder {
+.modal-form__texteria::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-label-texteria:hover, 
-.modal-label-texteria:focus {
+.modal-form__texteria:hover, 
+.modal-form__texteria:focus {
 border-color: var(--third-color);
 }
 
-.checkbox-label {
+.checkbox {
   position: relative;
 display: flex;
 align-items: center;
@@ -374,7 +374,7 @@ margin-bottom: 30px;
 }
 
 
-.checkbox-input {
+.checkbox__input {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -382,7 +382,7 @@ margin-bottom: 30px;
   margin-bottom: -1px;
 }
 
-.checkbox-text {
+.checkbox__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,13 +393,13 @@ margin-bottom: 30px;
 }
 
 
-.checkbox-href {
+.checkbox__link {
   color: var(--third-color);
   text-decoration:underline;
   margin-left: 5px;
 }
 
-.checkbox-text::before {
+.checkbox__text::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -411,7 +411,7 @@ margin-bottom: 30px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.checkbox-input:checked ~.checkbox-text::before {
+.checkbox__input:checked ~.checkbox__text::before {
   background-image: url(../images/icon-vector.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
