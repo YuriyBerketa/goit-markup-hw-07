@@ -494,7 +494,6 @@ margin-bottom: 30px;
 .sort-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* border-top: 1px solid #ececec; */
 }
 
 .list-button {
@@ -767,7 +766,7 @@ margin-bottom: 30px;
   padding-bottom: 0;
 }
 
-.client-list {
+.client-text {
   color: var(--first-color);
   font-weight: 700;
   font-size: 36px;
@@ -775,7 +774,7 @@ margin-bottom: 30px;
   text-align: center;
 }
 
-.client-link {
+.client-list {
   display: flex;
   padding: 0;
   justify-content: center;
@@ -783,17 +782,17 @@ margin-bottom: 30px;
   margin-bottom: 92px;
 }
 
-.client-link li {
+.client-list__item {
   margin-right: 30px;
 }
-.client-link li:last-child {
+.client-list__item:last-child {
   margin-right: 0;
 }
-.client-link-item {
+.client-list__item {
   list-style: none;
 }
 
-.client-list-item {
+.client-list__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -807,13 +806,13 @@ margin-bottom: 30px;
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list-item:hover,
-.client-list-item:focus {
+.client-list__link:hover,
+.client-list__link:focus {
   fill: var(--third-color);
   border: 1px solid #2196f3;
 }
 
-.client-logo {
+.client-list__icon {
   width: 106px;
   height: 60px;
 }
@@ -827,13 +826,14 @@ margin-bottom: 30px;
 
 
 
-.add-list {
+.address__list {
   margin-top: 20px;
+  padding-left: 0;
 }
-.add-list li {
+.address__item {
   margin-bottom: 9px;
 }
-.add-list li:last-child {
+.address__item:last-child {
   margin-bottom: 0;
 }
 
@@ -845,7 +845,7 @@ margin-bottom: 30px;
   font-size: 26px;
   line-height: 1.2;
 }
-.address {
+.address__link {
   color: var(--main-color);
   font-style: normal;
   font-weight: 400;
@@ -853,30 +853,25 @@ margin-bottom: 30px;
   line-height: 1.71;
 }
 
-.address > .add-list {
+.address__link > .address__list {
   margin-top: 20px;
 }
-.address,
-.mail,
-.tel {
+.address__link,
+.address__link-light {
   text-decoration: none;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail,
-.tel {
+.address__link-light {
   color: var(--footer-mail-tel-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-.address:hover,
-.address:focus,
-.mail:hover,
-.maol:focus,
-.tel:hover,
-.tel:focus {
+.address__link:hover,
+.address__link:focus,
+.address__link-light:hover,
+.address__link-light:focus {
   color: var(--third-color);
 }
 .footer-contact {
