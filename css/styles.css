@@ -56,14 +56,14 @@ a {
 .logo,
 .studio {
   text-decoration: none;
-  /* padding-top: 24px; */
 }
 
 .site-nav__list,
 .contact-nav,
 .benefits,
-.port-link,
+.portfolio__list,
 .team-list,
+.team-list__item,
 .add-list,
 .list-button,
 .port-nav {
@@ -295,9 +295,7 @@ a {
    color: var(--first-color);
    margin-bottom: 12px;
 }
-.modal-form {
 
-}
 
 .modal-label {
 display: block;
@@ -475,7 +473,7 @@ margin-bottom: 30px;
   height: 294px;
 }
 
-.caption-title {
+.caption__title {
   display: flex;
   width: 100%;
   padding: 27px 0px;
@@ -663,15 +661,15 @@ margin-bottom: 30px;
   text-align: center;
 }
 
-.portfolio__link {
+.portfolio__list {
   display: flex;
   margin-top: 50px;
   justify-content: center;
 }
-.port-link li {
+.portfolio__item {
   margin-right: 30px;
 }
-.port-link li:last-child {
+.portfolio__item:last-child {
   margin-right: 0px;
 }
 
@@ -685,14 +683,14 @@ margin-bottom: 30px;
   margin-top: 50px;
   justify-content: center;
 }
-.team-list li {
+.team-list__item {
   margin-right: 30px;
   display: flex;
 }
-.team-list li:last-child {
+.team-list__item:last-child {
   margin-right: 0px;
 }
-.team-item {
+.team-list__card {
   margin-right: 0px;
   background: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -712,11 +710,11 @@ margin-bottom: 30px;
   justify-content: center;
   align-items: center;
 }
-.messengers li {
+.messengers__item {
   margin-right: 10px;
 }
 
-.social-link {
+.messengers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -733,20 +731,20 @@ margin-bottom: 30px;
   display: flex;
 }
 
-.social-link:hover,
-.social-link:focus {
+.messengers__link:hover,
+.messengers__link:focus {
   background-color: var(--third-color);
   fill: var(--main-color);
 }
 
-.our-team {
+.section-team {
   color: var(--first-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-.team-list-name {
+.team-list__name {
   margin-top: 30px;
   color: var(--first-color);
   font-weight: 500;
@@ -754,7 +752,7 @@ margin-bottom: 30px;
   line-height: 1.19;
   text-align: center;
 }
-.team-list-title {
+.team-list__title {
   margin-top: 10px;
   margin-bottom: 16px;
   color: var(--secondary-color);
@@ -762,9 +760,6 @@ margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.section {
 }
 
 .client {
