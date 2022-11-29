@@ -66,7 +66,7 @@ a {
 .team-list__item,
 .add-list,
 .sorting-button,
-.port-nav {
+.portfolio-cards {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -503,16 +503,16 @@ margin-bottom: 30px;
   gap:8px;
 }
 
-.port-nav {
+.portfolio-cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-.port-nav li {
+.portfolio-cards__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.port-nav li {
+.portfolio-cards__item {
   width: 370px;
   display: flex;
   flex-direction: column;
@@ -521,23 +521,23 @@ margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-nav li:hover,
-.port-nav li:focus {
+.portfolio-cards__item:hover,
+.portfolio-cards__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.port-nav li:nth-child(3n + 3) {
+.portfolio-cards__item:nth-child(3n + 3) {
   margin-right: 0px;
 }
 
-.port-nav li:nth-last-child(-n + 3) {
+.portfolio-cards__item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.overlay-thumb {
+.portfolio-cards__thumb {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.portfolio-cards__overlay {
   display: flex;
   position: absolute;
   top: 0;
@@ -559,11 +559,11 @@ margin-bottom: 30px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-nav li:hover .overlay {
+.portfolio-cards__item:hover .portfolio-cards__overlay {
   transform: translateY(0);
 }
 
-.port-nav-sort {
+.portfolio-cards__count {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -950,7 +950,7 @@ margin-bottom: 30px;
     margin-bottom: 20px;
 }
 
-.sorting {
+.portfolio-cards__title {
   color: var(--first-color);
   font-weight: 700;
   font-size: 18px;
@@ -958,7 +958,7 @@ margin-bottom: 30px;
   letter-spacing: 0.06em;
 }
 
-.sorting-name {
+.portfolio-cards__discription {
   color: var(--secondary-color);
   font-weight: 400;
   font-size: 16px;
