@@ -13,9 +13,10 @@
     border-radius: 4px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+        }
 }
 
-.button-studio:hover,
-.button-studio:focus {
-    background-color: #188CE8;
-}
