@@ -1,36 +1,36 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 .portfolio__title {
-    color: var(--first-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  color: var(--first-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .portfolio__list {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
 }
 .portfolio__item {
-    margin-right: 30px;
-}
+  margin-right: 30px;
 
-.portfolio__item:last-child {
+  &:last-child {
     margin-right: 0px;
-}
-.caption {
-    position: relative;
-    height: 294px;
+  }
 }
 
-.caption__title {
+.caption {
+  position: relative;
+  height: 294px;
+
+  &__title {
     display: flex;
     width: 100%;
     padding: 27px 0px;
@@ -46,5 +46,5 @@
     position: absolute;
 
     bottom: 0;
+  }
 }
-
