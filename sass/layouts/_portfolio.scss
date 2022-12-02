@@ -55,16 +55,13 @@
 }
 
 .portfolio-cards__item {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.portfolio-cards__item {
   width: 370px;
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100% - 60px) / 3);
 
   &:hover,
   &:focus {
