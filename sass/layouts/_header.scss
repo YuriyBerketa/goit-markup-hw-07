@@ -7,33 +7,6 @@
   align-items: center;
 }
 
-.logo,
-.studio {
-  text-decoration: none;
-}
-
-.site-nav__list,
-.contact-nav,
-.benefits,
-.portfolio__list,
-.team-list,
-.team-list__item,
-.add-list,
-.sorting-button,
-.portfolio-cards {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus,
-.contact-nav__link:hover,
-.contact-nav__link:focus {
-  color: var(--third-color);
-}
-
 .logo {
   color: var(--third-color);
   margin-right: 93px;
@@ -41,6 +14,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .studio {
@@ -49,6 +23,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav__list {
@@ -58,12 +33,27 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .contact-nav__link {
   display: flex;
   color: var(--secondary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
 }
 
 .site-nav__link {
@@ -74,6 +64,11 @@
   color: var(--first-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
 }
 
 .site-nav__item {
@@ -117,6 +112,7 @@
 
 .contact-nav__item {
   margin-left: 50px;
+  list-style: none;
 
   &:first-child {
     margin-left: 0;

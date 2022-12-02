@@ -49,33 +49,6 @@ body {
   align-items: center;
 }
 
-.logo,
-.studio {
-  text-decoration: none;
-}
-
-.site-nav__list,
-.contact-nav,
-.benefits,
-.portfolio__list,
-.team-list,
-.team-list__item,
-.add-list,
-.sorting-button,
-.portfolio-cards {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus,
-.contact-nav__link:hover,
-.contact-nav__link:focus {
-  color: var(--third-color);
-}
-
 .logo {
   color: var(--third-color);
   margin-right: 93px;
@@ -83,6 +56,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .studio {
@@ -91,6 +65,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav__list {
@@ -100,12 +75,23 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .contact-nav__link {
   display: flex;
   color: var(--secondary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+.contact-nav__link:hover, .contact-nav__link:focus {
+  color: var(--third-color);
 }
 
 .site-nav__link {
@@ -115,6 +101,9 @@ body {
   padding-bottom: 32px;
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--third-color);
 }
 
 .site-nav__item {
@@ -155,6 +144,7 @@ body {
 
 .contact-nav__item {
   margin-left: 50px;
+  list-style: none;
 }
 .contact-nav__item:first-child {
   margin-left: 0;
@@ -380,13 +370,6 @@ body {
   line-height: 1.714;
   color: var(--secondary-color);
 }
-
-.checkbox__link {
-  color: var(--third-color);
-  text-decoration: underline;
-  margin-left: 5px;
-}
-
 .checkbox__text::before {
   content: "";
   display: inline-block;
@@ -397,6 +380,12 @@ body {
   margin-right: 7px;
   background-color: var(--main-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox__link {
+  color: var(--third-color);
+  text-decoration: underline;
+  margin-left: 5px;
 }
 
 .checkbox__input:checked ~ .checkbox__text::before {
@@ -443,6 +432,10 @@ body {
 .benefits {
   display: flex;
   gap: 30px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 .benefits__icon {
   display: flex;
@@ -500,6 +493,10 @@ body {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .portfolio__item {
@@ -547,11 +544,19 @@ body {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .team-list__item {
   margin-right: 30px;
   display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 .team-list__item:last-child {
   margin-right: 0px;
@@ -888,6 +893,8 @@ body {
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .sorting-button__link {
@@ -922,6 +929,10 @@ body {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .portfolio-cards__item {
